@@ -22,6 +22,7 @@ Chrome must be started with these flags to be able to access the GPU.
 # Using the stream-video-image with puppeteer in NodeJS
 This sample code exposes a /gpu endpoint which will fetch a screenshot of the chrome://gpu settings and return it. You can use it to verify that chrome is correctly configured to use the GPU. 
 
+```js
     import  puppeteer, { Browser } from  'puppeteer';
     import  express  from  'express';
     const app = express();
@@ -63,6 +64,7 @@ This sample code exposes a /gpu endpoint which will fetch a screenshot of the ch
     app.listen(port, () => {
 	    console.log(`Sample app listening on ${port}`)
     });
+```
     
 # About us
 We're a team on a mission to make it easier to go live from your browser. Check out our [in-browser livestreaming SDK here](https://www.notion.so/streamclub/Stream-Club-Cloud-c271d47f77c0497898df801471468fdf).
