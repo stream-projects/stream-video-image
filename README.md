@@ -65,4 +65,4 @@ This sample code exposes a /gpu endpoint which will fetch a screenshot of the ch
     });
     
 # About us
-We're a team on a mission to make it easier to go live from your browser. 
+We're a team on a mission to make it easier to go live from your browser. Check out our [in-browser livestreaming SDK here](https://www.notion.so/streamclub/Stream-Club-Cloud-c271d47f77c0497898df801471468fdf).
