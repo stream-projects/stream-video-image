@@ -3,7 +3,7 @@ This image configures the dependencies required to run headless chrome with GPU 
 
 I've only been able to get it to work on Ubuntu 20.04 with the pinned version of Chrome (not Chromium, regular chrome has better codec support). Once running, chrome://gpu should return an output like so:
 
-![Logo]([https://res.cloudinary.com/stream-studio/image/upload/v1633597030/pbhr3d2bidp5gwldbwnn.png](https://res.cloudinary.com/stream-studio/image/upload/v1633597030/pbhr3d2bidp5gwldbwnn.png)
+![Logo](https://res.cloudinary.com/stream-studio/image/upload/v1633597030/pbhr3d2bidp5gwldbwnn.png)
 
 # Required Chrome Flags
 Chrome must be started with these flags to be able to access the GPU. 
