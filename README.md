@@ -1,7 +1,7 @@
 # About
-This Dockerfile configures the dependencies required to run headless chrome with GPU acceleration. It also the extra packages required to support puppeteer.
+This Dockerfile configures the dependencies required to run headless chrome with GPU acceleration. It also installs the extra packages required to support puppeteer.
 
-I've only been able to get it to work on Ubuntu 20.04 with the pinned version of Chrome (not Chromium, regular chrome has better codec support). This [Linux Uprising post](https://www.linuxuprising.com/2018/08/how-to-enable-hardware-accelerated.html) found a patched vdpau-va-driver required to get VA-API support working. Once running, chrome://gpu should return an output like so:
+I've only been able to get it to work on Ubuntu 20.04 with the pinned version of Chrome (not Chromium, regular chrome has better codec support). This [Linux Uprising post](https://www.linuxuprising.com/2018/08/how-to-enable-hardware-accelerated.html) found the patched vdpau-va-driver required to get VA-API support working. Once running, chrome://gpu should return an output like so:
 
 ![Logo](https://res.cloudinary.com/stream-studio/image/upload/v1633597030/pbhr3d2bidp5gwldbwnn.png)
 
@@ -9,8 +9,8 @@ I've only been able to get it to work on Ubuntu 20.04 with the pinned version of
 Chrome must be started with these flags to be able to access the GPU. 
 
     [
-            '--autoplay-policy=no-user-gesture-required',
-            '--no-sandbox',
+            '--autoplay-policy=no-user-gesture-required', //convenience flag
+            '--no-sandbox', //needed for docker
             '--use-gl=egl',
             '--enable-gpu-rasterization',
             '--enable-zero-copy',
